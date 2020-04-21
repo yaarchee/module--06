@@ -81,8 +81,9 @@ body{
     background: #f38181;
     left: 0;
     bottom: 0;
-    height: 0;
-    transition:  height 0.2s linear;
+    height: 3px;
+    opacity: 0;
+    transition:  opacity 0.2s linear;
 }
 
 
@@ -92,6 +93,7 @@ body{
 }
 .nav-menu-list a:hover:before{
     height: 3px;
+    opacity: 1;
 
 }
 
