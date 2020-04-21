@@ -33,9 +33,10 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1230px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .main-header {
@@ -68,22 +69,28 @@ body{
     text-transform: uppercase;
     color: #95e1d3;
     display: block;
-    padding-bottom: 15px;
-    transition: 0.2s;
-
-}
-
-.nav-menu-list a:hover {
-    color: #f38181;
     position: relative;
+    padding-bottom: 15px;
+    transition:  color 0.2s linear;
+
 }
-.nav-menu-list a:hover:before{
+.nav-menu-list a:before{
     content: "";
     position: absolute;
     width: 100%;
     background: #f38181;
     left: 0;
     bottom: 0;
+    height: 0;
+    transition:  height 0.2s linear;
+}
+
+
+.nav-menu-list a:hover {
+    color: #f38181;
+
+}
+.nav-menu-list a:hover:before{
     height: 3px;
 
 }
@@ -102,16 +109,18 @@ body{
     margin-bottom: 64px;
 }
 
-.main-title-head{
+.main-title-head span{
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     font-weight: 400;
     margin: 0;
     text-align: center;
     margin-bottom: 16px;
+    text-transform: none;
+    display: block;
 }
 
-.main-title-body {
+.main-title-head {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -122,7 +131,7 @@ body{
 }
 
 
-.main-title-body:before{
+.main-title-head:before{
     content: "";
     position: absolute;
     width: 60px;
@@ -192,7 +201,7 @@ body{
     margin-bottom: 30px;
 }
 .team-element-logo{
-    transition: 0.2s;
+    transition: transform 0.2s linear;
     position: relative;
     background: linear-gradient(to top, #fce28a, #ffcb80, #ffb57c, #fda07d, #f48c82);
 
@@ -202,13 +211,11 @@ body{
 
 }
 .logo-team{
-    transition: 0.2s;
+    transition: opacity 0.2s linear;
+
 }
 .team-element-logo:hover .logo-team{
     opacity: 0.2;
-}
-.team-element-logo:hover .team-element-menu{
-    opacity: 1;
 }
 
 .team-element-menu{
@@ -220,9 +227,13 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: 0.2s;
+    transition: opacity 0.2s linear;
 
 }
+.team-element-logo:hover .team-element-menu{
+    opacity: 1;
+}
+
 .element-menu-link{
     position: relative;
     width: 56px;
@@ -231,6 +242,7 @@ body{
     background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
+    transition: background-color 0.2s linear;
 
 }
 .element-menu-link:hover{
@@ -280,6 +292,56 @@ body{
     text-align: center;
     margin-bottom: 6px;
 }
+.wrap-footer{
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding: 12px 0;
+}
 
+.form-main{
+    margin-left: auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-mail{
+    padding: 13px;
+    border-bottom: solid 1px #e5e5e5;
+    border-top: solid 1px #e5e5e5;
+    border-left: solid 1px #e5e5e5;
+    width: 229px;
+}
 
+.input-mail::placeholder{
+    color: #cccccc;
+    font-family: 'Roboto:ital', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+}
+.main-button{
+    padding: 14px 33px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #95e1d3;
+    border: none;
+}
+.copyright{
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.copyright a{
+    color: #f38181;
+}
 
+.main-footer{
+    padding-top: 68px;
+}
+.main-meet-team{
+    padding-bottom: 8px;
+}
