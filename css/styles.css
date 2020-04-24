@@ -315,12 +315,12 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
-.input-mail{ф
+.input-mail{
     padding: 13px;
     border-bottom: solid 1px #e5e5e5;
     border-top: solid 1px #e5e5e5;
     border-left: solid 1px #e5e5e5;
-    border-right: non;
+    border-right: none;
     width: 229px;
 }
 
