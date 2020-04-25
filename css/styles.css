@@ -112,10 +112,7 @@ ul{
 .main-services{
     padding-top: 109px;
 }
-.main-title {
-    color: #333333;
-    margin-bottom: 64px;
-}
+
 
 .main-title-head span{
     font-family: 'Kaushan Script', cursive;
@@ -136,6 +133,8 @@ ul{
     padding-bottom: 38px;
     margin: 0;
     text-align: center;
+    color: #333333;
+    margin-bottom: 64px;
 }
 
 
