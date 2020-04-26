@@ -76,7 +76,6 @@ ul{
     color: #95e1d3;
     display: block;
     position: relative;
-    padding-bottom: 15px;
     transition:  color 0.2s linear;
 
 }
@@ -86,7 +85,7 @@ ul{
     width: 100%;
     background: #f38181;
     left: 0;
-    bottom: 0;
+    bottom: -10px;
     height: 3px;
     opacity: 0;
     transition:  opacity 0.2s linear;
@@ -106,7 +105,7 @@ ul{
 .header-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .main-services{
@@ -322,6 +321,7 @@ ul{
     border-left: solid 1px #e5e5e5;
     border-right: none;
     width: 229px;
+    outline: none;
 }
 
 .input-mail::placeholder{
